@@ -1,0 +1,11 @@
+<h1><%= @record.date %></h1>
+
+<ul>
+  <li>Note: <%= @record.note %></li>
+</ul>
+
+
+<div class="controls">
+  <%= link_to 'Edit Record', edit_record_path(@record) %>
+  <%= link_to "Delete #{ @record.date }", @record, :method => 'delete' %>
+</div>
