@@ -38,5 +38,4 @@ c3.records << r2
 c6.records << r3
 c3.records << r4
 c3.records << r5
-
 puts "records and categories created"
