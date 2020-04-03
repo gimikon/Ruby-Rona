@@ -7,59 +7,15 @@ puts "#{ User.count } users created"
 
 
 Category.destroy_all
-c1 = Category.create ([
-  symptom: 'fever',
-  level: 'none',
-  icon: 'happy'
-  ])
-
-c2 = Category.create ([
-  symptom: 'fever',
-  level: 'light',
-  icon: 'sad'
-  ])
-
-c3 = Category.create ([
-  symptom: 'fever',
-  level: 'medium',
-  icon: 'cry'
-  ])
-
-c4 = Category.create ([
-  symptom: 'sore throat',
-  level: 'none',
-  icon: 'happy'
-  ])
-
-c5 = Category.create ([
-  symptom: 'sore throat',
-  level: 'light',
-  icon: 'sad'
-  ])
-
-c6 = Category.create ([
-  symptom: 'sore throat',
-  level: 'medium',
-  icon: 'cry'
-  ])
-
-c7 = Category.create ([
-  symptom: 'dry cough',
-  level: 'none',
-  icon: 'happy'
-  ])
-
-c8 = Category.create ([
-  symptom: 'dry cough',
-  level: 'light',
-  icon: 'sad'
-  ])
-
-c9 = Category.create ([
-  symptom: 'dry cough',
-  level: 'medium',
-  icon: 'cry'
-  ])
+c1 = Category.create :symptom => 'fever', :level => 'none', :icon => 'happy'
+c2 = Category.create :symptom => 'fever', :level => 'light', :icon => 'sad'
+c3 = Category.create :symptom => 'fever', :level => 'medium', :icon => 'cry'
+c4 = Category.create :symptom => 'sore throat', :level => 'none', :icon => 'happy'
+c5 = Category.create :symptom => 'sore throat', :level => 'light', :icon => 'sad'
+c6 = Category.create :symptom => 'sore throat', :level => 'medium', :icon => 'cry'
+c7 = Category.create :symptom => 'dry cough', :level => 'none', :icon => 'happy'
+c8 = Category.create :symptom => 'dry cough', :level => 'light', :icon => 'sad'
+c9 = Category.create :symptom => 'dry cough', :level => 'medium', :icon => 'cry'
 puts "#{ Category.count } categories created"
 
 
@@ -78,5 +34,9 @@ puts "users and records created"
 
 
 c1.records << r1
+c3.records << r2
+c6.records << r3
+c3.records << r4
+c3.records << r5
 
 puts "records and categories created"
