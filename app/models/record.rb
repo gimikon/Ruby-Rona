@@ -1,4 +1,4 @@
 class Record < ApplicationRecord
-  has_many :users
+  belongs_to :user, :optional => true
   has_many :categories
 end

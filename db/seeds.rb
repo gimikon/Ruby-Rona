@@ -1,5 +1,4 @@
 
-
 User.destroy_all
 u1 = User.create :name => 'yukiko isogimi', :email => 'yukiko@ga.co', :DOB => DateTime.new(1989, 12, 15), :address => 'kenshington', :password => 'chicken', :admin => true
 u2 = User.create :name => 'vivian wan',:email => 'viv@ga.co', :DOB => DateTime.new(1990, 12, 10), :address => 'beecroft',:password => 'chicken'
@@ -8,7 +7,6 @@ puts "#{ User.count } users created"
 
 
 Category.destroy_all
-
 c1 = Category.create ([
   symptom: 'fever',
   level: 'none',
@@ -64,23 +62,24 @@ c9 = Category.create ([
   ])
 puts "#{ Category.count } categories created"
 
+
 Record.destroy_all
-
-r1 = Record.create ([
-  date: DateTime.new(2020, 04, 03)
-  ])
-
-r2 = Record.create ([
-  date: DateTime.new(2020, 04, 04)
-  ])
-
-r3 = Record.create ([
-  date: DateTime.new(2020, 04, 05)
-  ])
-
-r4 = Record.create ([
-  date: DateTime.new(2020, 04, 06),
-  user_id:u1,
-  category_id:c3
-  ])
+r1 = Record.create :date => DateTime.new(2020,04,04), :note => 'I visited my mom'
+r2 = Record.create :date => DateTime.new(2020,04,05), :note => 'my body was a little hot'
+r3 = Record.create :date => DateTime.new(2020,04,05), :note => 'I was not feeling well'
+r4 = Record.create :date => DateTime.new(2020,04,06), :note => 'I just came back from Argentina'
+r5 = Record.create :date => DateTime.new(2020,04,07), :note => 'My mom was coughing a little bit'
 puts "#{ Record.count } records created"
+
+u1.records << r1 << r2 << r3
+u2.records << r4
+u3.records << r5
+puts "users and records created"
+
+
+# r1.categories << c1
+# r2.categories << c3 << c6
+# r3.categories << c3
+# r4.categories << c3
+# r5.categories << c8
+# puts "records and categories created"
