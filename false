@@ -1,0 +1,4 @@
+[WARNING] The model name 'Users' was recognized as a plural, using the singular 'User' instead. Override with --force-plural or setup custom inflection rules for this noun before running the generator.
+      invoke  active_record
+      create    db/migrate/20200403013933_create_users.rb
+      create    app/models/user.rb
