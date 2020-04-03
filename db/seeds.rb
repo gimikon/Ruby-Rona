@@ -77,9 +77,6 @@ u3.records << r5
 puts "users and records created"
 
 
-# r1.categories << c1
-# r2.categories << c3 << c6
-# r3.categories << c3
-# r4.categories << c3
-# r5.categories << c8
-# puts "records and categories created"
+c1.records << r1
+
+puts "records and categories created"
