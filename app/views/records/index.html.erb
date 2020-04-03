@@ -1,0 +1,10 @@
+<h1>All Records</h1>
+
+<% @records.each do |record| %>
+
+  <ul>
+    <li>Date: <%= link_to record.date, record %></li>
+    <li>Note: <%= record.note%></li>
+
+  </ul>
+<% end %>

@@ -1,0 +1,11 @@
+<%= form_for @record do |f| %>
+
+
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  <%= f.label :note %>
+  <%= f.text_field :note %>
+
+
+  <%= f.submit %>
+<% end %>
