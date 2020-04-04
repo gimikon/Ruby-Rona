@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'records/show'
 
   # get '/login' => 'session#new'
-  post '/login' => 'session#create'
+  post '/login' => 'session#login'
   # delete '/login' => 'session#destroy'
 
 resources :records
