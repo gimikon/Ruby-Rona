@@ -2,10 +2,8 @@ class RecordsController < ApplicationController
 
     def index
       @records = Record.all
+      
       render(json: @records)
-
-
-
     end
 
     def new
@@ -22,7 +20,6 @@ class RecordsController < ApplicationController
         format.json { render json: @record }
 
       end
-
     end
 
     def edit
@@ -60,9 +57,9 @@ class RecordsController < ApplicationController
 
     end
 
-    private # The following methods aren't accessible outside of this class.
+    private
     def record_params
-      # Strong params: white list of sanitised input -- stuff we are happy to let the user provide.
+
       params.require(:record).permit(:date, :note)
     end
   end
