@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-  before_action :check_for_admin, :only => [:index]
+  # before_action :check_for_admin, :only => [:index]
 
   def index
     @users = User.all
+    render(json: @users)
   end
 
   def new
@@ -17,6 +18,8 @@ class UsersController < ApplicationController
     else
       render :new
     end
+
+
   end
 
   private
