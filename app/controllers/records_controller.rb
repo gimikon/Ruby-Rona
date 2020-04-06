@@ -1,7 +1,7 @@
 class RecordsController < ApplicationController
 
     def index
-      @records = Record.all
+      @records = Record.all.order(:id)
       render(json: @records)
     end
 
