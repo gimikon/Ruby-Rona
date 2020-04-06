@@ -38,7 +38,7 @@ class UsersController < ApplicationController
         status: :created,
         user: @user
       }
-    else 
+    else
       render json: {
         status: 500,
         errors: @user.errors.full_messages
