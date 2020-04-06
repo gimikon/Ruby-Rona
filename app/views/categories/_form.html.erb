@@ -1,0 +1,20 @@
+<%= form_for @category do |f| %>
+<div class="field">
+    <%= f.label :symptom %>
+    <%= f.text_field :symptom %>
+  </div>
+
+  <div class="field">
+    <%= f.label :level %>
+    <%= f.text_field :level %>
+  </div>
+
+  <div class="field">
+    <%= f.label :icon %>
+    <%= f.text_field :icon %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
