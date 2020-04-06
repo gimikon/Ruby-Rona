@@ -2,7 +2,14 @@ class RecordsController < ApplicationController
 
     def index
       @records = Record.all.order(:id)
+<<<<<<< HEAD
       render(json: @records)
+=======
+      respond_to do |format|
+        format.html
+        format.json {render json: @records}
+      end
+>>>>>>> calendar
     end
 
     def new
