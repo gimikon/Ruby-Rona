@@ -10,8 +10,11 @@ Rails.application.routes.draw do
   get 'records/show'
 
   # get '/login' => 'session#new'
-  post '/login' => 'session#login'
-  # delete '/login' => 'session#destroy'
+  # post '/login' => 'session#login'
+
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+  get '/logged_in', to: 'sessions#is_logged_in?'
 
 resources :records
 end
