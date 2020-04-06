@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
 #   helper_method :login!, :logged_in?, :current_user, :authorized_user?, :logout!
-  
+
 #   def login!
 #       session[:user_id] = @user.id
 #     end
@@ -30,4 +30,4 @@ class ApplicationController < ActionController::Base
 #       session.clear
 #   end
 
-# end
+end
