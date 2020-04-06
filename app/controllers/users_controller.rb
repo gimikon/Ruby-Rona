@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         errors: ['no users found']
       }
     end
->>>>>>> 280b1754c35bd9bc7f9a20e0e68d2eba847cb0b7
+
   end
 
   def new
