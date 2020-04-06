@@ -1,8 +1,11 @@
 class RecordsController < ApplicationController
 
     def index
-      @records = Record.all
-      render(json: @records)
+      @records = Record.all.order(:id)
+      respond_to do |format|
+        format.html
+        format.json {render json: @records}
+      end
     end
 
     def new
