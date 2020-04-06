@@ -3,9 +3,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-<<<<<<< HEAD
-    render(json: @users)
-=======
     if @users
       render json: {
         users: @users
@@ -41,7 +38,7 @@ class UsersController < ApplicationController
         status: :created,
         user: @user
       }
-    else 
+    else
       render json: {
         status: 500,
         errors: @user.errors.full_messages
