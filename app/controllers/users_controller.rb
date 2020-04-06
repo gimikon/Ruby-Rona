@@ -3,9 +3,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-<<<<<<< HEAD
-    render(json: @users)
-=======
     if @users
       render json: {
         users: @users
@@ -16,7 +13,6 @@ class UsersController < ApplicationController
         errors: ['no users found']
       }
     end
->>>>>>> 280b1754c35bd9bc7f9a20e0e68d2eba847cb0b7
   end
 
   def new
