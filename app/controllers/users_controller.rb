@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
-  before_action :check_for_admin, :only => [:index]
+  # before_action :check_for_admin, :only => [:index]
 
   def index
     @users = User.all
+<<<<<<< HEAD
+    render(json: @users)
+=======
     if @users
       render json: {
         users: @users
@@ -13,6 +16,7 @@ class UsersController < ApplicationController
         errors: ['no users found']
       }
     end
+>>>>>>> 280b1754c35bd9bc7f9a20e0e68d2eba847cb0b7
   end
 
   def new
@@ -43,6 +47,8 @@ class UsersController < ApplicationController
         errors: @user.errors.full_messages
       }
     end
+
+
   end
 
   private
