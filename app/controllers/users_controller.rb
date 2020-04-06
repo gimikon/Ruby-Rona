@@ -13,7 +13,6 @@ class UsersController < ApplicationController
         errors: ['no users found']
       }
     end
-
   end
 
   def new
