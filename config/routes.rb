@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
   root :to => 'pages#welcome'
   resources :users, :only => [:new, :create, :index]
+  resources :sessions, :only => [:create]
   resources :registrations, :only => [:create]
   resources :categories #catergories = symptoms
+  
+  
+  post '/login', to: 'sessions#create'
+  delete :logout, to: 'sessions#logout'
+  get :logged_in, to: 'sessions#logged_in?'
 
   get 'users/new'
   get 'records/index'
@@ -13,9 +19,7 @@ Rails.application.routes.draw do
   # get '/login' => 'session#new'
   # post '/login' => 'session#login'
 
-  post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  get '/logged_in', to: 'sessions#is_logged_in?'
+
 
 resources :records
 end
