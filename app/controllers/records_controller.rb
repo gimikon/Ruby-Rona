@@ -14,7 +14,7 @@ class RecordsController < ApplicationController
 
     def create
       record = Record.create record_params
-      redirect_to records_path
+      
 
       respond_to do |format|
 
@@ -62,6 +62,6 @@ class RecordsController < ApplicationController
     private
     def record_params
 
-      params.require(:record).permit(:date, :note)
+      params.require(:record).permit(:user_id, :category_id, :note, :date)
     end
   end
