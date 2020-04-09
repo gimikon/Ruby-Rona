@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  
+
   def create
     user = User.find_by :email => params[:email]
     if user.present? && user.authenticate(params[:password])
@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
           user: user
         }
       else
-        render json: { 
+        render json: {
           status: 401,
           errors: ['No such user', 'Please verify credentials and try again or signup']
         }
@@ -33,6 +33,7 @@ class SessionsController < ApplicationController
 
   def logout
     session[:user_id] = nil
+    # reset_session
     render json: { status: 200, logged_out: true }
   end
 
