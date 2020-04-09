@@ -14,7 +14,7 @@ class RecordsController < ApplicationController
 
     def create
       record = Record.create record_params
-      
+
 
       respond_to do |format|
 
@@ -43,6 +43,10 @@ class RecordsController < ApplicationController
 
     def show
       @record = Record.find params[:id]
+      respond_to do |format|
+        format.html
+        format.json{render json: @record}
+      end
     end
 
     def destroy
