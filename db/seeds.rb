@@ -13,9 +13,9 @@ c3 = Category.create :symptom => 'fever', :level => 'medium', :icon => 'https://
 c4 = Category.create :symptom => 'sore throat', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
 c5 = Category.create :symptom => 'sore throat', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
 c6 = Category.create :symptom => 'sore throat', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
-c7 = Category.create :symptom => 'dry cough', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486846/cough_udstec.png'
-c8 = Category.create :symptom => 'dry cough', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486846/cough_udstec.png'
-c9 = Category.create :symptom => 'dry cough', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486846/cough_udstec.png'
+c7 = Category.create :symptom => 'dry cough', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
+c8 = Category.create :symptom => 'dry cough', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
+c9 = Category.create :symptom => 'dry cough', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
 puts "#{ Category.count } categories created"
 
 
