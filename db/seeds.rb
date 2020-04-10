@@ -7,15 +7,15 @@ puts "#{ User.count } users created"
 
 
 Category.destroy_all
-c1 = Category.create :symptom => 'fever', :level => 'none', :icon => 'happy'
-c2 = Category.create :symptom => 'fever', :level => 'light', :icon => 'sad'
-c3 = Category.create :symptom => 'fever', :level => 'medium', :icon => 'cry'
-c4 = Category.create :symptom => 'sore throat', :level => 'none', :icon => 'happy'
-c5 = Category.create :symptom => 'sore throat', :level => 'light', :icon => 'sad'
-c6 = Category.create :symptom => 'sore throat', :level => 'medium', :icon => 'cry'
-c7 = Category.create :symptom => 'dry cough', :level => 'none', :icon => 'happy'
-c8 = Category.create :symptom => 'dry cough', :level => 'light', :icon => 'sad'
-c9 = Category.create :symptom => 'dry cough', :level => 'medium', :icon => 'cry'
+c1 = Category.create :symptom => 'fever', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486528/fever_guh3e8.png'
+c2 = Category.create :symptom => 'fever', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486528/fever_guh3e8.png'
+c3 = Category.create :symptom => 'fever', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586486528/fever_guh3e8.png'
+c4 = Category.create :symptom => 'sore throat', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
+c5 = Category.create :symptom => 'sore throat', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
+c6 = Category.create :symptom => 'sore throat', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476810/skgodzvzffnyvicjg1rb.png'
+c7 = Category.create :symptom => 'dry cough', :level => 'none', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
+c8 = Category.create :symptom => 'dry cough', :level => 'light', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
+c9 = Category.create :symptom => 'dry cough', :level => 'medium', :icon => 'https://res.cloudinary.com/dlypbtgzi/image/upload/v1586476778/lkq79k1870a5pyzkta6z.png'
 puts "#{ Category.count } categories created"
 
 
