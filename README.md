@@ -1,5 +1,8 @@
 ## GA Project #2: RONA symptoms tracking App
 
+we use Trello, branches, netilify, Axios, React, JWT
+ 
+
 ### Background (TBC)
 ___
 
@@ -27,47 +30,47 @@ ___
 ### Features (TBC)
 ___
 
-* Responsive
 * Sign up, sign in using email address
-* Daily tracker on a list of COVID symptoms (adults and kids versions)
-* A calendar view for users to select a day to log their symptoms 
+* Daily tracker on a list of COVID symptoms
+* A daily view for users to select a day to log their symptoms 
 * Each symptoms has various severity levels for users to select
 * Users can add/edit/delete notes to their daily logs
 * Users can v
 * As user's symptoms reach a certain level, the app will prompt the user to seek medical advice
-* Availibility of the latest COVID19 news for awareness
-* Availibility of the latest COVID19 statistics
+* Responsive
+
+### Challenges
+* data rendering between frontend and backend  
 
 ### Technologies Used (TBC)
 ___
 
 * Ruby version: 2.7.0
 * Rails version 5.2.4.1
-* Heroku 7.39.0
+* Heroku 7.39.0 (for backend deployment)
+* Netlify (for frontend deployment)
 * HTML
 * CSS
-* Bootstrap
+* React-Bootstrap
 * Ruby
 * React
-* CRUD system
 
 ### GEM/API Used (TBC)
 ___
 
 * Ruby version: 2.7.0
-* Calendar GEM: https://github.com/excid3/simple_calendar
-* COVID19 API:
-* News API: may be
 
 ### Acknowledgements (TBC)
 ---
 
 To all the amazing women ......
 
-### Wishlist (TBC)
+### Wishlist
 ---
-* Display graphs
-* The ability to add symptoms
+* Implement privacy
+* More responsive
+* Display COVID19 statistics
+* The ability to add different symptom(s)
 * plus many more ++
 
 ### Accessibility (To move up the page)
