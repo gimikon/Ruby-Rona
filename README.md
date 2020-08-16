@@ -1,14 +1,13 @@
 ## GA Project #2: RONA symptoms tracking App
 
-we use Trello, branches, netilify, Axios, React, JWT
+
+deployed in netlify, you can find https://rona-covid19-tracker.netlify.app/#/
  
 
 ### Background (TBC)
 ___
 
 COVID19 (Conrona Virus aka RONA) is real, it is catastrophic, it caused too much damage, to each individual, to our wellbeing, to businesses, to the economy, to the world and the unexpected stress (such as financial stress) to the majority. We are experiencing RONA while completing our software engineering course. It is not something we forget.
-
-[Read more ...](http://www.sailprogram.org.au/site/)
 
 ### Objective
 ___
